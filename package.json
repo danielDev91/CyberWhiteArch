@@ -1,0 +1,20 @@
+{
+  "name": "cyberwhitearch",
+  "version": "1.0.0",
+  "description": "This is a base privacy-focused application that has its community with no email or password required.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielDev91/CyberWhiteArch.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielDev91/CyberWhiteArch/issues"
+  },
+  "homepage": "https://github.com/danielDev91/CyberWhiteArch#readme"
+}
