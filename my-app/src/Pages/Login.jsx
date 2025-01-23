@@ -1,27 +1,13 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-const App = () => {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+const generateRandomNumber = () => {
+    return Math.floor(Math.random() * 10**15).toString().padStart(15, '0');
+};
 
-    const handleLogin = (e) => {
-        e.preventDefault();
-        // Perform login logic here
-        console.log('Username: ', username);
-        console.log('Password: ', password);
+const Login = () => {
+    const [randomNumber, setRandomNumber] = useState('');
+
+    const handleGenerate = () => {
+        setRandomNumber(generateRandomNumber());
     };
-    
-    return (
-        <div className='App'>
-            <header className='App-Header'>
-                <img src={logo} className='App-logo' alt="logo" />
-                <p>
-                    Edit <code>src/App.jsx</code> and save to reload.
-                </p>
-                <form></form>
-            </header>
-        </div>
-    )
-}
+};
