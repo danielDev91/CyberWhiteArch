@@ -17,8 +17,13 @@ const Login = () => {
             {randomNumber && (
                 <div>
                     <p>Random Number: {randomNumber}</p>
+                    <button onClick={() => navigator.clipboard.writeText(randomNumber)}>
+                        Copy Number
+                    </button>
                 </div>
-            )}
+            )};
         </div>
-    )
+    );
 };
+
+export default Login;
