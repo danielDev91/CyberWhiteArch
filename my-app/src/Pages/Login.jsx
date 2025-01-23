@@ -20,8 +20,27 @@ const App = () => {
                 <p>
                     Edit <code>src/App.jsx</code> and save to reload.
                 </p>
-                <form></form>
+                <form onSubmit={handleLogin}>
+                    <div>
+                        <label>Username:</label>
+                        <input 
+                        type="text"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
+                        />
+                    </div>
+                    <div>
+                        <label>Password:</label>
+                        <input 
+                        type="password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        />
+                    </div>
+                </form>
             </header>
         </div>
-    )
-}
+    );
+};
+
+export default App;
