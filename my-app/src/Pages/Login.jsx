@@ -10,4 +10,15 @@ const Login = () => {
     const handleGenerate = () => {
         setRandomNumber(generateRandomNumber());
     };
+
+    return (
+        <div>
+            <button onClick={handleGenerate}>Generate Number</button>
+            {randomNumber && (
+                <div>
+                    <p>Random Number: {randomNumber}</p>
+                </div>
+            )}
+        </div>
+    )
 };
